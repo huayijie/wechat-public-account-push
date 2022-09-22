@@ -11,11 +11,11 @@ export const USER_CONFIG = {
   // 公众号APP_SECRET
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_SECRET: "1444e3fbb7a1585c034d53705e6b6255",
+  APP_SECRET: "2dcd631c46c6eae083ef0473ef7e1d9e",
   
   // 是否给文字设置多彩颜色, 和emoji不兼容
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
-  IS_SHOW_COLOR:fales,
+  IS_SHOW_COLOR: true,
   
   // 功能开关,打开：true，关闭：false
   SWITCH: {
@@ -30,7 +30,7 @@ export const USER_CONFIG = {
     // 金山每日一句
     CIBA: true,
     // 每日一言
-    oneTalk: true,
+    oneTalk: false,
     // 土味情话(彩虹屁)
     earthyLoveWords: false,
     // 朋友圈文案
@@ -41,7 +41,7 @@ export const USER_CONFIG = {
     poetry: false,
     
     /** 星座运势 */
-    horoscope: true,
+    horoscope: false,
     
     /** 生日消息和节日消息 */
     birthdayMessage: true,
@@ -51,7 +51,7 @@ export const USER_CONFIG = {
   
   // 每日一言的内容类型
   // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
-  LITERARY_PREFERENCE: "其他",
+  LITERARY_PREFERENCE: "",
   
   
   /**
@@ -60,17 +60,17 @@ export const USER_CONFIG = {
   USERS: [ouPAE58ebdlER9BE6S2K_uhls3Uw,ouPAE50R8HSRxJrd6FSRDzAWC3JU]
     {
       // 想要发送的人的名字
-      name: "吴傻蛋",
+      name: "my lover",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "lover",
+      id: "",
       // 你想对他发送的模板消息的模板ID
       useTemplateId: "3LJ6KkIGFKxPpujkjgWlcrUlJ4CPFlFtnShAV8-XZq0",
       // 所在省份
-      province: "河北省",
+      province: "广东",
       // 所在城市
-      city: "衡水市",
+      city: "肇庆",
       // 新历生日, 仅用作获取星座运势, 格式必须
-      horoscopeDate: '03-12',
+      horoscopeDate: '12-27',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
       horoscopeDateType: '今日',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
@@ -78,8 +78,8 @@ export const USER_CONFIG = {
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {"type": "*生日", "name": "吴傻蛋", "year": "2002", "date": "03-12"},
-        {"type": "*节日", "name": "跟屁小狗的生日", "year": "2001", "date": "01-29"},
+        {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09"},
+        {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
         {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
@@ -160,9 +160,9 @@ export const USER_CONFIG = {
   /** 天气相关 */
   
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: "河北",
+  PROVINCE: "广东",
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: "衡水",
+  CITY: "惠州",
   
   /** 重要节日相关 */
   
