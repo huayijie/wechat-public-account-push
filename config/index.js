@@ -64,11 +64,11 @@ export const USER_CONFIG = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "lover",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "	3LJ6KkIGFKxPpujkjgWlcrUlJ4CPFlFtnShAV8-XZq0",
+      useTemplateId: "3LJ6KkIGFKxPpujkjgWlcrUlJ4CPFlFtnShAV8-XZq0",
       // 所在省份
-      province: "河北",
+      province: "河北省",
       // 所在城市
-      city: "衡水",
+      city: "衡水市",
       // 新历生日, 仅用作获取星座运势, 格式必须
       horoscopeDate: '03-12',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
@@ -79,7 +79,7 @@ export const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {"type": "*生日", "name": "吴傻蛋", "year": "2002", "date": "03-12"},
-        {"type": "节日", "name": "跟屁小狗的生日", "year": "2001", "date": "01-29"},
+        {"type": "*节日", "name": "跟屁小狗的生日", "year": "2001", "date": "01-29"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
         {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
