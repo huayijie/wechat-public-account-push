@@ -15,7 +15,7 @@ export const USER_CONFIG = {
   
   // 是否给文字设置多彩颜色, 和emoji不兼容
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
-  IS_SHOW_COLOR: true,
+  IS_SHOW_COLOR:fales,
   
   // 功能开关,打开：true，关闭：false
   SWITCH: {
@@ -30,7 +30,7 @@ export const USER_CONFIG = {
     // 金山每日一句
     CIBA: true,
     // 每日一言
-    oneTalk: false,
+    oneTalk: true,
     // 土味情话(彩虹屁)
     earthyLoveWords: false,
     // 朋友圈文案
@@ -41,7 +41,7 @@ export const USER_CONFIG = {
     poetry: false,
     
     /** 星座运势 */
-    horoscope: false,
+    horoscope: true,
     
     /** 生日消息和节日消息 */
     birthdayMessage: true,
@@ -51,13 +51,13 @@ export const USER_CONFIG = {
   
   // 每日一言的内容类型
   // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
-  LITERARY_PREFERENCE: "",
+  LITERARY_PREFERENCE: "其他",
   
   
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔
    */
-  USERS: [ouPAE58ebdlER9BE6S2K_uhls3Uw，ouPAE50R8HSRxJrd6FSRDzAWC3JU]
+  USERS: [ouPAE58ebdlER9BE6S2K_uhls3Uw,ouPAE50R8HSRxJrd6FSRDzAWC3JU]
     {
       // 想要发送的人的名字
       name: "吴傻蛋",
@@ -79,7 +79,7 @@ export const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {"type": "*生日", "name": "吴傻蛋", "year": "2002", "date": "03-12"},
-        {"type": "*节日", "name": "跟屁小狗的生日", "year": "2001", "date": "01-29"},
+        {"type": "节日", "name": "跟屁小狗的生日", "year": "2001", "date": "01-29"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
         {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
